@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://dkkv3kuoyg5b3"]
+
+[ext_resource type="Texture2D" uid="uid://btppg5nb8nfi1" path="res://assests/sprites/platforms.png" id="1_gf172"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_l3fms"]
+distance = -186.0
+
+[node name="Area2D" type="Area2D" unique_id=1208915886]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1816672782]
+position = Vector2(292.99997, 121)
+scale = Vector2(7.2349396, 15.558824)
+texture = ExtResource("1_gf172")
+region_enabled = true
+region_rect = Rect2(-19.99997, 46.399994, 83.99997, 17.600006)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=761568005]
+position = Vector2(196, 0)
+shape = SubResource("WorldBoundaryShape2D_l3fms")
